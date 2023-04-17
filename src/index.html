@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Vite App</title>
+    <title>Loopstudios</title>
   </head>
   <body>
-    <h1>Hola</h1>
-    <img src="./assets/images/cute-cat.webp" alt="" />
+    <header class="header">
+      <div class="header__top">
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <div id="toggle-menu" class="toggle-menu">
+          <img src="./assets/images/icon-hamburger.svg" alt="menu" />
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="menu" id="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#"> ABOUT </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> CAREERS </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> EVENTS </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> PRODUCTS </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> SUPPORT </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="box-experiences">
+        <h1 class="experiences">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+      </div>
+    </header>
+
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
