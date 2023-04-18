@@ -6,12 +6,18 @@
 
 :root {
   --text-menu: 24px;
+  --text-menu-desktop: 15px;
+  --text-section-mobile: 15px;
+  --title-section-desktop: 48px;
   --text-title: 40px;
+  --text-title-secundary: 32px;
+  --text-title-desktop: 72px;
   --border-title: 2px solid white;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --white: white;
   --background-color: black;
+  --color-text: #979797;
 }
 
 img {
@@ -32,20 +38,60 @@ a {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
   font-family: "Alata", sans-serif;
   font-family: "Josefin Sans", sans-serif;
 }
 
+/* Este mediaquery seria escritorio */
 .header {
+  position: relative;
   background-color: red;
-  padding: 24px;
+  height: 100vh;
+  background-image: url(../assets/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: 165px;
+  }
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(../assets/images/desktop/image-hero.jpg);
+    /* background-size: contain; */
+    height: 650px;
+    margin-bottom: 164px;
+  }
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .header__top {
+    padding: 64px 165px;
+  }
 }
 
 .menu {
@@ -57,7 +103,6 @@ body {
   background-color: var(--background-color);
   transform: translateX(100%);
   transition: transform 2s;
-  z-index: -1;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -65,6 +110,32 @@ body {
   gap: 1.5rem;
   font-size: var(--text-menu);
   color: var(--white);
+  text-transform: uppercase;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .menu {
+    transform: translateX(0);
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 0 165px;
+    height: 40px;
+    top: 60px;
+    left: 0;
+    text-transform: none;
+    font-size: var(--text-menu-desktop);
+    font-family: "Alata", sans-serif;
+  }
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .toggle-menu {
+    display: none;
+  }
 }
 
 .visible {
@@ -72,8 +143,251 @@ body {
 }
 
 .box-experiences {
+  border: var(--border-title);
+  width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .box-experiences {
+    width: 650px;
+    margin: 0;
+    margin-top: 80px;
+  }
+}
+
+.experiences {
+  font-size: var(--text-title);
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 26px;
+  color: var(--white);
+  font-weight: var(--font-weight-light);
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .experiences {
+    width: 650px;
+    margin: 0;
+    font-size: var(--text-title-desktop);
+    padding: 40px;
+  }
+}
+
+.section-interactive {
+  padding: 96px 24px;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .section-interactive {
+    padding: 0;
+    padding-left: 164px;
+    position: relative;
+    margin-bottom: 185px;
+  }
+}
+
+.image-interactive {
+  margin-bottom: 48px;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .image-interactive {
+    margin-bottom: 0;
+    width: 730px;
+  }
+}
+
+.text-container {
+  padding: 0 24px;
+  text-align: center;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .text-container {
+    padding-left: 96px;
+    padding-top: 96px;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    width: 560px;
+    left: 730px;
+    text-align: left;
+  }
+}
+
+.title__text-container {
+  font-size: var(--text-title-secundary);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--font-weight-light);
+  line-height: 32px;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .title__text-container {
+    font-size: var(--title-section-desktop);
+    line-height: 48px;
+    margin-bottom: 25px;
+  }
+}
+
+.text__text-container {
+  font-size: var(--text-section-mobile);
+  font-family: "Alata", sans-serif;
+  font-weight: var(--font-weight-regular);
+  line-height: 25px;
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .text__text-container {
+    font-size: var(--text-menu-desktop);
+  }
+}
+
+.section-creations {
+  padding: 0 24px;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .section-creations {
+    padding: 0;
+    padding-left: 164px;
+    padding-right: 164px;
+    margin-bottom: 185px;
+  }
+}
+
+.title__section-creations {
+  text-align: center;
+  font-size: var(--text-title-secundary);
+  font-weight: var(--font-weight-light);
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 48px;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .title__section-creations {
+    text-align: left;
+    font-size: var(--title-section-desktop);
+    font-weight: var(--font-weight-light);
+    margin-bottom: 80px;
+  }
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .card-images {
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-template-rows: 450px 450px;
+    gap: 1.875rem;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .card {
+    height: 100%;
+  }
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  background-color: blue;
-  background-image: url(../assets/images/mobile/);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.462);
+}
+
+.text-card {
+  position: relative;
+  color: var(--white);
+  font-size: var(--text-menu);
+  font-weight: var(--font-weight-light);
+  width: 127px;
+  margin: 0;
+  z-index: 1;
+}
+
+.text-card--small {
+  width: 100px;
+}
+
+.card--earth {
+  background-image: url(../assets/images/mobile/image-deep-earth.jpg);
+}
+
+.card--arcade {
+  background-image: url(../assets/images/mobile/image-night-arcade.jpg);
+}
+
+.card--soccer {
+  background-image: url(../assets/images/mobile/image-soccer-team.jpg);
+}
+
+.card--grid {
+  background-image: url(../assets/images/mobile/image-grid.jpg);
+}
+
+.card--from {
+  background-image: url(../assets/images/mobile/image-from-above.jpg);
+}
+
+.card--pocket {
+  background-image: url(../assets/images/mobile/image-pocket-borealis.jpg);
+}
+
+.card--curiosity {
+  background-image: url(../assets/images/mobile/image-curiosity.jpg);
+}
+
+.card--fisheye {
+  background-image: url(../assets/images/mobile/image-fisheye.jpg);
+}
+
+/* Este mediaquery seria escritorio */
+@media screen and (min-width: 768px) {
+  .card--earth {
+    background-image: url(../assets/images/desktop/image-deep-earth.jpg);
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--text-menu-desktop);
+  font-family: "Alata", sans-serif;
+  letter-spacing: 5px;
+  background-color: var(--white);
+  border: 1px solid black;
 }
