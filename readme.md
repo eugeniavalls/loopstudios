@@ -1,14 +1,15 @@
 # PRÁCTICA RESPONSIVE CON METODOLOGÍA BEM
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/01.png)
 
 ## Ejemplo en vivo
 
-- [Vista en vivo](URL-de-github-pages-de-este-proyecto)
+- [Vista en vivo](https://eugeniavalls.github.io/practica-menu-responsive-animado/)
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Ejercicio para poner en práctica la metodología BEM. Utilización de display y position.
+Realización de la práctica en responsive para ordenador y móvil.
 
 ## Tecnologías 🛠
 
@@ -25,9 +26,15 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/02.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/03.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/04.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/05.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/06.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/07.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/08.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/09.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica-menu-responsive-animado/main/src/assets/screenshots/10.png)
 
 ## Autor ✒️
 

@@ -47,7 +47,6 @@ body {
 /* Este mediaquery seria escritorio */
 .header {
   position: relative;
-  background-color: red;
   height: 100vh;
   background-image: url(../assets/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
